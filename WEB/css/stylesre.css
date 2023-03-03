@@ -1,0 +1,105 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: sans-serif;
+}
+ 
+ nav{
+ 	background-color: #ff0000;
+ 	width: 100%;
+ 	height: 80px;
+}
+
+.brand{
+	margin-left: 5%;
+	line-height: 80px;
+
+}
+
+.brand a{
+	color: #ff0000;
+	font-size: 30px;
+}
+ nav ul{
+ 	float: right;
+ 	margin-right: 5%;
+ }
+
+ nav ul li{
+ 	display: inline-block;
+ 	line-height: 80px;
+ 	margin-left: 10px;
+ }
+
+ nav ul li a{
+ 	color: #ff0000;
+ 	font-size: 25px;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	mid-height: 50vh;
+	position: relative;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	text-align: center;
+	padding: 20px 25px;
+	box-shadow: 0 5px 10px #ff0000;
+	position: absolute;
+	top: 25vh;
+}
+
+form .title{
+	color: #252525;
+	font-size: 35px;
+	font-weight: 800;
+	margin-bottom: 30px;
+}
+form label{
+	margin-bottom: 35px;
+
+}
+form label.date{
+	font-size: 20xp;
+	color: #ff0000;
+	margin-right: 10xp;
+}
+form label input{
+	outline: none;
+	border: none;
+	color: #252525;
+	border-bottom:solid 1px #ff0000;
+	padding: 0 5px;
+	font-size: 18px;
+
+}
+form label input::placeholder{
+	color: rgba(37, 37, 37 0.5);
+}
+form .link{
+	color: #ff0000;
+	margin bottom: 15xp;
+}
+form button{
+	color: #fff;
+	border: none;
+	background-color: #ff0000;
+	pading: 10xp 15xp;
+	cursor: pointer;
+	font-size: 20px;
+}
+ .brand img{
+ 	width: 200px;
+ 	height: 85px;
+}
+.logo img {
+	display: block;
+	margin: auto;
+	width: 200px;
+	height: 35%;
+}
