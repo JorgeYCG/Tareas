@@ -1,11 +1,11 @@
 <?php
+error_reporting(0);
     $SERVER="localhost";
     $user="root";
     $pass="";
     $bd="practicaslb";
-
-    $conecta=new mysqli($SERVER,$user,$pass,$bd);
-    if ($conecta->connect_errno) {
-        die("La conexion a fallado" .$conecta->connect_errno);
+    $conecta=mysqli_connect($SERVER,$user,$pass,$bd);
+    if ($conecta->connect_error){
+        die("La conexion a fallado" .$conecta->connect_error);
     } 
 ?>
