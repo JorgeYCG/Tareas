@@ -1,5 +1,5 @@
-<?php "include/conecta.php";
-      "include/accion.php";
+<?php include "include/conexion.php";
+    include "include/acciones1.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +11,10 @@
     <title>Registro</title>
 </head>
 <body>
-<div class="Container m-0 Content-justify-center py-2" style="padding:20% " >
+    <div class="text-center">
+    <img src="img/usuario.png" alt="logo" >
+    </div>
+<div class="Container m-0 Content-justify-center py-2" style="padding:8%;">
             <div class ="row text-center">
                 <h1 class="text-ligh "style="background-color:#ff0000; " >Registro</h1>
                </div>

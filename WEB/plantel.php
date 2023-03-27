@@ -1,9 +1,5 @@
-<?php "include/conexionp.php";
-        "include/Accionp.php" ;?>
-        <body >
-        <div clas="Container m-0 Content-justify-Center py-2">
-            <div class ="row text-Center">
-                <h1 class="text-ligh "style="background-color:#8000ff;">Plantel</h1>
+<?php include "include/conexion.php";
+       include "include/acciones2.php" ;?>
 </div>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,39 +11,44 @@
     <title>Plantel</title>
 </head>
 <body>
-    
-</body>
-</html>
+    <div class="text-center">
+    <img src="img/plantel.png" alt="logo" >
+    </div>
+    <div clas="Container m-0 Content-justify-Center py-2" style="padding:5%;">
+            <div class ="row text-Center">
+                <h1 class="text-ligh "style="background-color:#8000ff;">Registro del Plantel</h1>
+    </div>
 <form id="Registro" action="<?php echo $_Server['php_SELF'];?>" Method="post">
 <div class="row text-Center">
     <div class ="Col-sm-12 Col-md-12 Col-lg-12">
-        <input type="text" name="NombrePlantel" class="form-control" placeholder="NombrePlantel" required>
+        <input type="text" name="nombre_p" class="form-control" placeholder="Nombre del Plantel" required>
 </div>
 </div>
 <div class="row text-Center">
     <div class ="Col-sm-12 Col-md-12 Col-lg-12">
-        <input type="text" name="clave_p'" class="form-control" placeholder="clave_p" required>
+        <input type="text" name="clave_p'" class="form-control" placeholder="clave plantel" required>
 </div>
 </div>
 <div class="row text-Center">
     <div class ="Col-sm-12 Col-md-12 Col-lg-12">
-    <input type="text" name="Direccion" class="form-control" placeholder="Dirección" required>
+    <input type="text" name="direccion" class="form-control" placeholder="Dirección" required>
 </div>
 </div>
 <div class="row text-Center">
     <div class ="Col-sm-12 Col-md-12 Col-lg-12">
-        <input type="tel" name="Telefono" class="form-control" placeholder="55-55-55-55-55" required>
+        <input type="tel" name="telefono" class="form-control" placeholder="55-55-55-55-55" required>
 </div>
 </div>
 <div class="row text-Center">
     <div class ="Col-sm-12 Col-md-12 Col-lg-12">
-        <input type="text" name="Responsable" class="form-control" placeholder="Responsable" required>
+        <input type="text" name="responsable" class="form-control" placeholder="Responsable." required>
 </div>
 </div>
 <div class="row text-Center">
     <div class ="Col-sm-12 Col-md-12 Col-lg-12">
-        <input type="submit" value="Registro" name="btn" class="btn-ligh " Style="background-color:#8000ff"   >
+        <input type="submit" value="registro" name="btn" class="btn-ligh " Style="background-color:#8000ff"   >
 </div>
 </div>
 </form>
 </body>
+</html>

@@ -1,5 +1,5 @@
-<?php "include/conecta.php";
-      "include/accion3.php";
+<?php include "include/conexion.php";
+    include "include/acciones3.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,39 +11,43 @@
     <title>Registro de Lugares</title>
 </head>
 <body>
-<div class="Container m-0 Content-justify-center py-2">
+<div class="text-center">
+    <img src="img/lugares.png" alt="logo" >
+    </div>
+<div class="Container m-0 Content-justify-center py-2" style="padding:5%;">
             <div class ="row text-center">
-                <h1 class="text-ligh "style="background-color:#00ffbf;" >Registro de Lugares</h1>
-               </div>
+            <h1 class="text-ligh "style="background-color:#00ffbf;" >Registro de Lugares</h1>
+    </div>
 <form id="Registro" action="<?php echo $_Server['php_SELF'];?>" Method="post">
+
 <div class="row text-center">
     <div class ="Col-sm-12 Col-md-12 Col-lg-12">
-        <input type="text" name="Nombre" class="form-control" placeholder="Nombre" required>
-</div>
-</div>
-<div class="row text-center">
-    <div class ="Col-sm-12 Col-md-12 Col-lg-12">
-        <input type="text" name="Apellidos" class="form-control" placeholder="Apellidos" required>
+        <input type="text" name="nombre_L" class="form-control" placeholder="Nombre del lugar" required>
 </div>
 </div>
 <div class="row text-center">
     <div class ="Col-sm-12 Col-md-12 Col-lg-12">
-    <input type="text" name="Direccion" class="form-control" placeholder="Dirección" required>
+        <input type="text" name="descripcion" class="form-control" placeholder="Descripción" required>
 </div>
 </div>
 <div class="row text-center">
     <div class ="Col-sm-12 Col-md-12 Col-lg-12">
-        <input type="tel" name="Telefono" class="form-control" placeholder="55-55-55-55-55" required>
+    <input type="text" name="tel_L" class="form-control" placeholder="55-55-55-55-55" required>
 </div>
 </div>
 <div class="row text-center">
     <div class ="Col-sm-12 Col-md-12 Col-lg-12">
-        <input type="Date" name="Fecha" class="form-control" >
+        <input type="email" name="email_L" class="form-control" placeholder="E-mail" required>
 </div>
 </div>
 <div class="row text-center">
     <div class ="Col-sm-12 Col-md-12 Col-lg-12">
-        <input type="text" name="Email" class="form-control" placeholder="Email" required>
+        <input type="text" name="facebooK" class="form-control" placeholder="Facebook" required>
+</div>
+</div>
+<div class="row text-center">
+    <div class ="Col-sm-12 Col-md-12 Col-lg-12">
+        <input type="text" name="horario" class="form-control" placeholder="Horario" required>
 </div>
 </div>
 <div class="row text-center">
